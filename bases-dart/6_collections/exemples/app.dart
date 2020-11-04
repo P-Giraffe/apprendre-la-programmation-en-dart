@@ -9,6 +9,19 @@ void tableauxClesValeurs() {
   listeScores.remove("Poppy");
   listeScores["Poppy"] = 121;
   listeScores["Poppy"] = 221;
+  for (var score in listeScores.values) {
+    print("Score : $score");
+  }
+
+  for (var joueur in listeScores.keys) {
+    print("Joueur $joueur");
+  }
+
+  for (var infosJoueur in listeScores.entries) {
+    final joueur = infosJoueur.key;
+    final score = infosJoueur.value;
+    print("$joueur : $score");
+  }
 }
 
 void tableauxNumerotes() {
