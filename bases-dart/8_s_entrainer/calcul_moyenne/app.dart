@@ -7,6 +7,7 @@ void main() {
   const premierChoixPossible = choixAjouter;
   const dernierChoixPossible = choixQuitter;
   int choixUtilisateur;
+  final Map<String, List<double>> listePrincipale = Map();
   do {
     do {
       print("$choixAjouter - Ajouter des notes");
@@ -18,10 +19,10 @@ void main() {
 
     switch (choixUtilisateur) {
       case choixAjouter:
-        ajouterNotes();
+        ajouterNotes(listePrincipale);
         break;
       case choixAfficher:
-        afficherMoyennes();
+        afficherMoyennes(listePrincipale);
         break;
       case choixQuitter:
         quitter();
@@ -31,8 +32,8 @@ void main() {
   } while (choixUtilisateur != choixQuitter);
 }
 
-void ajouterNotes() {}
+void ajouterNotes(Map<String, List<double>> listeMatieres) {}
 
-void afficherMoyennes() {}
+void afficherMoyennes(Map<String, List<double>> listeMatieres) {}
 
 void quitter() {}
