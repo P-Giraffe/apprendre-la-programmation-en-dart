@@ -8,6 +8,8 @@ void main() {
   const dernierChoixPossible = choixQuitter;
   int choixUtilisateur;
   final Map<String, List<double>> listePrincipale = Map();
+  listePrincipale["Maths"] = [13.5, 15, 7.5, 18.75];
+  listePrincipale["Algo"] = [9, 17.5, 12.75];
   do {
     do {
       print("$choixAjouter - Ajouter des notes");
@@ -63,10 +65,17 @@ void afficherMoyennes(Map<String, List<double>> listeMatieres) {
   for (final infosMatiere in listeMatieres.entries) {
     print(infosMatiere.key);
     final listeNotes = infosMatiere.value;
-    for (final note in listeNotes) {
-      print(" -> $note");
+    if (listeNotes.isNotEmpty) {
+      var somme = 0.0;
+      for (final note in listeNotes) {
+        print(" -> $note");
+        somme = somme + note;
+      }
+      print("Moyenne = ${somme / listeNotes.length}");
     }
   }
 }
 
-void quitter() {}
+void quitter() {
+  print("Bye bye");
+}
