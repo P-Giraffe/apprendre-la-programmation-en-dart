@@ -46,7 +46,7 @@ void ajouterNotes(Map<String, List<double>> listeMatieres) {
   } while (nombreNotes < 0);
 
   // 3 - Demander chacune des notes et les insérer dans listeMatieres
-  if (nombreNotes == 0) {
+  if (nombreNotes > 0) {
     final listeNotesDeLaMatiere = listeMatieres[nomMatiere] ?? [];
     for (var numeroNote = 1; numeroNote <= nombreNotes; numeroNote++) {
       double note;
@@ -59,6 +59,10 @@ void ajouterNotes(Map<String, List<double>> listeMatieres) {
   }
 }
 
-void afficherMoyennes(Map<String, List<double>> listeMatieres) {}
+void afficherMoyennes(Map<String, List<double>> listeMatieres) {
+  for (final infosMatiere in listeMatieres.entries) {
+    print(infosMatiere.key);
+  }
+}
 
 void quitter() {}
