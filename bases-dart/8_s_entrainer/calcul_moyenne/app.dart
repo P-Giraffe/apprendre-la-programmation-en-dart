@@ -62,6 +62,10 @@ void ajouterNotes(Map<String, List<double>> listeMatieres) {
 void afficherMoyennes(Map<String, List<double>> listeMatieres) {
   for (final infosMatiere in listeMatieres.entries) {
     print(infosMatiere.key);
+    final listeNotes = infosMatiere.value;
+    for (final note in listeNotes) {
+      print(" -> $note");
+    }
   }
 }
 
