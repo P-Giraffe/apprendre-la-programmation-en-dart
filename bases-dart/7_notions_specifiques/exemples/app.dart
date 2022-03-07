@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'NE_PAS_TOUCHER/user_input.dart';
+//import 'NE_PAS_TOUCHER/user_input.dart';
 
 void main() {
   chainesDeCaracteres();
@@ -60,7 +60,7 @@ void conversionDeTypes() {
 }
 
 void gestionValeursNulles() {
-  String user;
+  String user = "Ted";
   direBonjour(user);
 }
 

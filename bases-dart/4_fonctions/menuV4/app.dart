@@ -43,7 +43,7 @@ void afficherPreferences(String nomUtilisateur) {
   print("Voici les préférences de $nomUtilisateur");
 }
 
-void quitter({String utilisateur}) {
+void quitter({String? utilisateur}) {
   if (utilisateur != null) {
     print("Au revoir $utilisateur !");
   } else {
