@@ -1,14 +1,33 @@
 import 'dart:async';
 
 import 'NE_PAS_TOUCHER/user_input.dart';
+import 'point_cardinal.dart';
 
 void main() {
-  chainesDeCaracteres();
+  enumerations();
+}
+
+void enumerations() {
+  final direction = PointCardinal.Sud;
+  if (direction == PointCardinal.Nord) {
+    print("Passez le bonjour au Père Noël");
+  }
+  switch (direction) {
+    case PointCardinal.Nord:
+      print("Passez le bonjour au Père Noël");
+      break;
+    case PointCardinal.Sud:
+      print("Bienvenue au soleil! ☀️");
+      break;
+    default:
+      print("Choisissez entre le Surf et le Ski");
+      break;
+  }
 }
 
 void chainesDeCaracteres() {
   String user = "Ted Lasso ";
-  //user = user.trim();
+  user = user.trim();
   print(user.length);
   print(user.toLowerCase());
   print(user.toUpperCase());
@@ -60,10 +79,13 @@ void conversionDeTypes() {
 }
 
 void gestionValeursNulles() {
-  String user;
-  direBonjour(user);
+  String? user;
+
+  direBonjour(user ?? "Bob");
 }
 
 void direBonjour(String prenom) {
-  print("Bonjour $prenom, votre prénom comporte ${prenom.length} lettres");
+  if (prenom != null) {
+    print("Bonjour $prenom, votre prénom comporte ${prenom.length} lettres");
+  }
 }

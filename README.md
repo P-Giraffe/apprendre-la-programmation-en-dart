@@ -1,11 +1,11 @@
-# [Apprendre à programmer (en Dart)](https://www.purplegiraffe.fr/p/apprendre-a-programmer-en-dart/?utm_source=mbritto&utm_medium=github)
-[![](https://www.filepicker.io/api/file/TY0QnAdLTPOJbrSPZKaH)](https://www.purplegiraffe.fr/p/apprendre-a-programmer-en-dart/?utm_source=mbritto&utm_medium=github)
+# [Apprendre à programmer (en Dart)](https://www.purplegiraffe.fr/p/apprendre-a-programmer-en-dart/?utm_source=mbritto&utm_medium=github&utm_campaign=bases_dart)
+[![](https://www.filepicker.io/api/file/TY0QnAdLTPOJbrSPZKaH)](https://www.purplegiraffe.fr/p/apprendre-a-programmer-en-dart/?utm_source=mbritto&utm_medium=github&utm_campaign=bases_dart)
 
 Ce cours permet d'apprendre les bases de la programmation pour les débutants, et de les appliquer en Dart (le language utilisé par Flutter pour créer des applications mobiles).
 
-Lien direct : [Apprendre à programmer (en Dart)](https://www.purplegiraffe.fr/p/apprendre-a-programmer-en-dart/?utm_source=mbritto&utm_medium=github)
+Lien direct : [Apprendre à programmer (en Dart)](https://www.purplegiraffe.fr/p/apprendre-a-programmer-en-dart/?utm_source=mbritto&utm_medium=github&utm_campaign=bases_dart)
 
-Ce cours fait partie de mes cours en ligne disponibles sur le site de [Purple Giraffe](https://www.purplegiraffe.fr/?utm_source=mbritto&utm_medium=github).
+Ce cours fait partie de mes cours en ligne disponibles sur le site de [Purple Giraffe](https://www.purplegiraffe.fr/?utm_source=mbritto&utm_medium=github&utm_campaign=bases_dart).
 
 ## Projets de base
 
