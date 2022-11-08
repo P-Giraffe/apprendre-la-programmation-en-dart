@@ -10,12 +10,13 @@ void main() {
   final Map<String, List<double>> listePrincipale = Map();
   listePrincipale["Maths"] = [13.5, 15, 7.5, 18.75];
   listePrincipale["Algo"] = [9, 17.5, 12.75];
+  listePrincipale["Anglais"] = [];
   do {
     do {
       print("$choixAjouter - Ajouter des notes");
       print("$choixAfficher - Afficher les moyennes");
       print("$choixQuitter - Quitter");
-      choixUtilisateur = readInt("Que souhaitez-vous faire ?");
+      choixUtilisateur = readInt("\nQue souhaitez-vous faire ?");
     } while (choixUtilisateur < premierChoixPossible ||
         choixUtilisateur > dernierChoixPossible);
 
@@ -71,7 +72,10 @@ void afficherMoyennes(Map<String, List<double>> listeMatieres) {
         print(" -> $note");
         somme = somme + note;
       }
-      print("Moyenne = ${somme / listeNotes.length}");
+      final moyenne = (somme / listeNotes.length*100).roundToDouble()/100;
+      print("Moyenne = ${moyenne}\n");
+    } else {
+      print(" -> Pas de note\n");
     }
   }
 }

@@ -1,4 +1,4 @@
-import 'NE_PAS_TOUCHER/user_input.dart';
+//import 'NE_PAS_TOUCHER/user_input.dart';
 
 void main() {
   tableauxClesValeurs();
